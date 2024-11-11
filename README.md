@@ -21,7 +21,7 @@ The objective of this project is to tackle the challenge of high dimensionality 
 
 ## Project Files
 - **data/gene-expression-invasive-vs-noninvasive-cancer.csv**: The dataset containing gene expression values for each patient.
-- **notebooks/Gene_Expression_Statistical_Data_Analysis.rmd**: Jupyter notebooks for each phase, including preprocessing, model training, and analysis.
+- **scripts/Gene_Expression_Statistical_Data_Analysis.rmd**: R scripts for data preprocessing, analysis, and model training.
 - **report/Statistical_Data_Analysis_Report.pdf**: Detailed project report outlining methodologies, results, and conclusions.
 - **README.md**: Project documentation (this file).
 
