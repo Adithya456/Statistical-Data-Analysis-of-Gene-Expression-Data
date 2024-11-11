@@ -8,16 +8,16 @@ Early detection of invasive cancers is crucial in improving patient outcomes and
 
 The objective of this project is to tackle the challenge of high dimensionality through dimensionality reduction techniques and to assess the performance of various machine learning models in classifying cancer types. The key focus is to:
 
-(1.) Reduce the feature space to improve model performance and interoperability.
-(2.) Evaluate the impact of dimensionality reduction on different supervised learning algorithms.
-(3.) Use resampling techniques such as K-fold cross-validation and bootstrapping to ensure the robustness of the results and avoid overfitting.
-(4.) By leveraging these approaches, this project demonstrates how machine learning models can achieve high accuracy in cancer classification tasks while maintaining computational efficiency and stability.
+1. Reduce the feature space to improve model performance and interoperability.
+2. Evaluate the impact of dimensionality reduction on different supervised learning algorithms.
+3. Use resampling techniques such as K-fold cross-validation and bootstrapping to ensure the robustness of the results and avoid overfitting.
+4. By leveraging these approaches, this project demonstrates how machine learning models can achieve high accuracy in cancer classification tasks while maintaining computational efficiency and stability.
 
 ## Project Structure
-1. **Data Preprocessing**: Includes handling missing values, dimensionality reduction using t-tests, variance-based selection, and Lasso regression. 
-2. **Exploratory Data Analysis**: Visualizes data distributions and gene correlations.
-3. **Clustering and Dimensionality Reduction**: Applies K-means clustering, hierarchical clustering, Principal Component Analysis (PCA), and correlation-based clustering.
-4. **Model Training and Evaluation**: Logistic regression, Poisson regression, K-Nearest Neighbors (KNN), Random Forest, Support Vector Machine (SVM), and XGBoost are trained with different data preprocessing techniques.
+- **Data Preprocessing**: Includes handling missing values, dimensionality reduction using t-tests, variance-based selection, and Lasso regression. 
+- **Exploratory Data Analysis**: Visualizes data distributions and gene correlations.
+- **Clustering and Dimensionality Reduction**: Applies K-means clustering, hierarchical clustering, Principal Component Analysis (PCA), and correlation-based clustering.
+- **Model Training and Evaluation**: Logistic regression, Poisson regression, K-Nearest Neighbors (KNN), Random Forest, Support Vector Machine (SVM), and XGBoost are trained with different data preprocessing techniques.
 
 ## Project Files
 - **data/gene-expression-invasive-vs-noninvasive-cancer.csv**: The dataset containing gene expression values for each patient.
