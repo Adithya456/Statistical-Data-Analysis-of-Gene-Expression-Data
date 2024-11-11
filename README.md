@@ -41,40 +41,6 @@ The dataset consists of gene expression levels from 78 patients, with 4949 gene 
 - **PCA Analysis**: Analyzed principal components to visualize class separation.
 - **Clustering**: Hierarchical clustering and K-means clustering were used to observe gene grouping.
 
-(1.) **Preprocessing**
-
-**kNN Imputation**: Missing values were imputed using the kNN algorithm, which estimates missing values based on the closest data points in the feature space.
-**Outlier Removal**: Rows with an excessive number of missing values were removed to improve the quality of the data.
-**Standardization**: Gene expression levels were standardized to ensure that the models could process the data effectively.
-
-(2.) **Dimensionality Reduction**
-To tackle the high dimensionality of the gene expression data, several techniques were applied:
-
-**Two-Sample t-Test**: A statistical method was employed to identify genes that exhibit significant differences between the invasive and non-invasive cancer groups. This reduced the number of features from 2000 to a more manageable subset.
-**LASSO Regression**: L1 regularization was applied to further reduce the feature space by penalizing less important genes. This approach helps eliminate irrelevant features and improves the model's generalization.
-**Variance-Based Feature Selection**: Genes with high variance were selected based on the assumption that they carry the most discriminative information. This method retained genes that contribute most to class separation.
-
-(3.) Supervised Machine Learning
-Various supervised models were applied to the reduced dataset to classify the cancer types:
-
-**Logistic Regression**: A baseline model used for binary classification.
-**K-Nearest Neighbors (KNN)**: A distance-based classifier that showed strong performance after dimensionality reduction.
-**Support Vector Machines (SVM)**: A model that constructs hyperplanes to separate classes, which proved effective with high-dimensional data.
-**Random Forest**: An ensemble method that uses multiple decision trees to improve accuracy and robustness.
-**XGBoost**: A gradient-boosted decision tree algorithm optimized for high performance.
-
-(4.) Validation and Resampling
-To ensure that the models were not overfitting and could generalize to unseen data, the following resampling methods were used:
-
-**K-fold Cross-Validation**: The dataset was split into 7 folds to ensure that each model was evaluated on different subsets of the data, providing a more robust estimate of model performance.
-**Bootstrapping**: Multiple resamples were drawn from the original dataset to validate the stability of the model's predictions across different data distributions.
-
-(5.) Unsupervised Learning
-In addition to supervised classification, unsupervised learning techniques were applied to explore the structure of the data:
-
-**Principal Component Analysis (PCA)**: PCA was used to reduce the dimensionality further by extracting the most important principal components. This helped visualize the separation between the cancer types.
-**Clustering**: Hierarchical clustering and K-means clustering were performed to explore the natural groupings in the dataset and compare them with the known cancer labels.
-
 ## Machine Learning Models and Results
 The following table shows the misclassification errors for each model under different preprocessing conditions.
 
@@ -130,6 +96,7 @@ Contributions are welcome! If you find any issues or want to improve the code, f
 
 ## License
 This project is licensed under the [MIT License](./LICENSE). See the LICENSE file for more details.
+
 
 For more details, please refer to the [project report](./Statistical_Data_Analysis_Report.pdf).
 
