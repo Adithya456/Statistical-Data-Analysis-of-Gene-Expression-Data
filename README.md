@@ -89,7 +89,7 @@ pip install -r requirements.txt
 - **Resampling Stability**: K-fold cross-validation and bootstrapping confirmed that the models trained on reduced data were robust and generalizable, with consistent performance across different data splits.
 
 ## Conclusion and Summary
-This project demonstrates the effectiveness of combining dimensionality reduction techniques with machine learning models for gene expression analysis and cancer classification. It highlights the importance of feature selection in high-dimensional datasets and provides insights into model stability through robust validation techniques. The results show that K-Nearest Neighbors (KNN) with dimensionality reduction using Lasso regression achieved the best performance, with a misclassification error of 0. The t-test combined with Lasso regression proved highly effective for this gene expression dataset.
+This project demonstrates the effectiveness of combining dimensionality reduction techniques with machine learning models for gene expression analysis and cancer classification. It highlights the importance of feature selection in high-dimensional datasets and provides insights into model stability through robust validation techniques. The results show that K-Nearest Neighbors (KNN) with dimensionality reduction using Lasso regression achieved the best performance, with a misclassification error 0. The t-test combined with Lasso regression proved highly effective for this gene expression dataset.
 
 ## Contributing
 Contributions are welcome! If you find any issues or want to improve the code, feel free to open a pull request or create an issue in the repository.
